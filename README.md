@@ -30,7 +30,7 @@ maxWidth：最大宽度（ `-1` 为自适应）
 
 maxHeight：最大高度（ `-1` 为自适应）
 
-quality：压缩等级（数字越大等级越高）
+quality：图片质量（百分比）
 
 outType：输出文件类型
 
