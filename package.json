@@ -1,0 +1,11 @@
+{
+    "name": "imgmin",
+    "version": "1.0.0",
+    "main": "app.js",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "fs-extra": "^11.2.0",
+        "shelljs": "^0.8.5"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "ffmpegPath": "ffmpeg",
+    "inputDir": "./input",
+    "outputDir": "./output",
+    "inputType": ["jpg", "jpeg", "png", "webp"],
+    "maxWidth": 1920,
+    "quality": 2,
+    "outType": "webp",
+    "outName": "{name}_cover"
+}
