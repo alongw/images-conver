@@ -2,6 +2,8 @@
 
 一个基于 ffmpeg 的简单批量图像转换的实现
 
+配置文件 `config.json`
+
 ```json
 {
     "ffmpegPath": "ffmpeg",
