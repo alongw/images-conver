@@ -4,6 +4,10 @@
     "main": "app.js",
     "license": "MIT",
     "type": "module",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
     "dependencies": {
         "fs-extra": "^11.2.0",
         "shelljs": "^0.8.5"

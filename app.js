@@ -28,7 +28,7 @@ fileList.forEach((e, i) => {
     const outName = config.outName.replace('{name}', liteLame) // {name}.[config.outType]
     const output = `${config.outputDir}/${outName}.${config.outType}`
     shell.exec(
-        `${config.ffmpegPath} -y -i "${e}" -q:v "${config.quality}" -vf "scale=${config.maxWidth}:${config.maxHeight}" "${output}"`,
+        `${config.ffmpegPath} -y -i "${e}" -q "${config.quality}" -vf "scale=${config.maxWidth}:${config.maxHeight}" "${output}"`,
         { silent: true }
     )
     console.log(
