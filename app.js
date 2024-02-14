@@ -25,7 +25,7 @@ const fileList = shell.ls(`${config.inputDir}/*.+(${config.inputType.join('|')})
 fileList.forEach((e, i) => {
     const fileName = e.split('/').pop() // image.jpg
     const liteLame = fileName.split('.').shift() // image
-    const outName = config.outName.replace('{name}', liteLame) // {name}.[config.outType]
+    const outName = config.outName.replace('{name}', liteLame).replace(('{index}', i)) // {name}.[config.outType]
     const output = `${config.outputDir}/${outName}.${config.outType}`
     shell.exec(
         `${config.ffmpegPath} -y -i "${e}" -q "${config.quality}" -vf "scale=${config.maxWidth}:${config.maxHeight}" "${output}"`,

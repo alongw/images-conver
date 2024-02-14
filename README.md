@@ -16,7 +16,6 @@
     "outType": "webp",
     "outName": "{name}_cover"
 }
-
 ```
 
 ffmpegPath：ffmpeg 程序的路径或环境变量
@@ -40,3 +39,5 @@ outName：输出文件名
 #### 输出文件名可用变量
 
 `{name}` ：原文件名（不含后缀名）
+
+`{index}` ：本次工程的图片序号（就是控制台打印那个张数）
